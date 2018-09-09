@@ -24,5 +24,24 @@ namespace noskhe_Admin
         {
             InitializeComponent();
         }
+        private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonOpenMenu.Visibility = Visibility.Collapsed;
+            ButtonCloseMenu.Visibility = Visibility.Visible;
+        }
+
+        private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonCloseMenu.Visibility = Visibility.Collapsed;
+            ButtonOpenMenu.Visibility = Visibility.Visible;
+        }
+        private void SignInButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Username.Text.ToLower() == "123" && Password.Password == "123")
+            {
+                LoginGrid.Visibility = Visibility.Hidden;
+                MainGrid.Visibility = Visibility.Visible;
+            }
+        }
     }
 }
