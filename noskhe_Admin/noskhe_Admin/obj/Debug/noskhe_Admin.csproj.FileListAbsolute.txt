@@ -1,0 +1,15 @@
+F:\Noskhe\noskhe_Admin\noskhe_Admin\bin\Debug\noskhe_Admin.exe.config
+F:\Noskhe\noskhe_Admin\noskhe_Admin\bin\Debug\noskhe_Admin.exe
+F:\Noskhe\noskhe_Admin\noskhe_Admin\bin\Debug\noskhe_Admin.pdb
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.csprojResolveAssemblyReference.cache
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\MainWindow.g.cs
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\App.g.cs
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin_MarkupCompile.cache
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin_MarkupCompile.lref
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\MainWindow.baml
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.g.resources
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.Properties.Resources.resources
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.csproj.GenerateResource.Cache
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.csproj.CoreCompileInputs.cache
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.exe
+F:\Noskhe\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.pdb
