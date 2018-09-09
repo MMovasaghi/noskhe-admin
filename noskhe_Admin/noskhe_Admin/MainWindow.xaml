@@ -6,7 +6,7 @@
         xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:noskhe_Admin"
         mc:Ignorable="d"
-        Title=" Noskhe-Administrator" Height="700" Width="1200" Background="Wheat" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title=" Noskhe-Administrator" Height="700" Width="1200" Background="LightGray" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Window.Resources>
         <Storyboard x:Key="MenuOpen">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
