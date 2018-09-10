@@ -1,4 +1,5 @@
-﻿using System;
+﻿using noskhe_Admin.Views.Pharmacy.AllPharmacys;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,6 +53,18 @@ namespace noskhe_Admin
                 LoginGrid.Visibility = Visibility.Visible;
                 MainGrid.Visibility = Visibility.Hidden;
             }            
+        }
+
+        private void AllPharmacyMenuButton_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UserControl allPharmacy = new AllPharmacy();
+            ShowGridFunc(ref allPharmacy, "All Pharmacis Data");
+        }
+        public void ShowGridFunc(ref UserControl userControl,string Title)
+        {
+            ShowGridView.Children.Clear();
+            TitleTEXT.Text = Title;
+            ShowGridView.Children.Add(userControl);
         }
     }
 }

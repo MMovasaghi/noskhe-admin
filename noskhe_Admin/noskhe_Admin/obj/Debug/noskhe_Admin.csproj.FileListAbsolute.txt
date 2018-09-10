@@ -33,3 +33,5 @@ F:\Noskhe\noskhe-admin\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.csproj.C
 F:\Noskhe\noskhe-admin\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.exe
 F:\Noskhe\noskhe-admin\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.pdb
 F:\Noskhe\noskhe-admin\noskhe_Admin\noskhe_Admin\obj\Debug\noskhe_Admin.csprojResolveAssemblyReference.cache
+F:\Noskhe\noskhe-admin\noskhe_Admin\noskhe_Admin\obj\Debug\Views\Pharmacy\AllPharmacys\AllPharmacy.g.cs
+F:\Noskhe\noskhe-admin\noskhe_Admin\noskhe_Admin\obj\Debug\Views\Pharmacy\AllPharmacys\AllPharmacy.baml

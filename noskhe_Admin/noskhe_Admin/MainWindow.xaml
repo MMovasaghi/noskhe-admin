@@ -20,7 +20,6 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="60"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
-
     </Window.Resources>
 
     <Window.Triggers>
@@ -61,6 +60,12 @@
                     </materialdesign:PopupBox>
                 </StackPanel>
             </Grid>
+            
+            <!--Main Grid to show menu details-->
+            <Grid  Grid.Column="1" Grid.Row="1">
+                <Grid x:Name="ShowGridView" Margin="30"/>
+            </Grid>
+
             <!--Left Menu-->
             <Grid x:Name="GridMenu" Grid.Column="0" Grid.Row="0" Width="60" HorizontalAlignment="Left" Background="#FF5365A6" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="0,0,0,-0.4">
                 <StackPanel>
@@ -79,7 +84,7 @@
                     <!--left Button list Menu-->
                     <ListView  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FFD7D2D2" Background="{x:Null}" BorderBrush="{x:Null}">
                         <!--ALLPharmacy /Search Button-->
-                        <ListViewItem x:Name="AllPharmacyMenuButton" Height="60">
+                        <ListViewItem x:Name="AllPharmacyMenuButton" Height="60" MouseLeftButtonUp="AllPharmacyMenuButton_MouseLeftButtonUp">
                             <StackPanel Orientation="Horizontal">
                                 <materialdesign:PackIcon Kind="Pharmacy" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
                                 <TextBlock Text="All Pharmacis"  FontSize="15" VerticalAlignment="Center" Margin="20 10" FontFamily="IRANSans"/>
