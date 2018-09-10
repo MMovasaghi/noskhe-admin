@@ -43,5 +43,15 @@ namespace noskhe_Admin
                 MainGrid.Visibility = Visibility.Visible;
             }
         }
+
+        private void logoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult mbox = MessageBox.Show("آیا مطمئن هستید که می خواهید خارج شوید ؟", "Log Out", MessageBoxButton.YesNo);
+            if (mbox == MessageBoxResult.Yes)
+            {
+                LoginGrid.Visibility = Visibility.Visible;
+                MainGrid.Visibility = Visibility.Hidden;
+            }            
+        }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:noskhe_Admin"
         mc:Ignorable="d"
-        Title=" Noskhe-Administrator" Height="700" Width="1200" Background="LightGray" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title=" Noskhe-Administrator" Height="700" Width="1200" MinHeight="700"  MinWidth="1200" Background="LightGray" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Storyboard x:Key="MenuOpen">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
@@ -37,13 +37,32 @@
             <RowDefinition Height="600*"/>
             <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="MainGrid" Visibility="Hidden" Grid.Row="0">
+        <Grid x:Name="MainGrid" Visibility="Visible" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60*"/>
+                <RowDefinition Height="600*"/>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="19*"/>
             </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Height="60" VerticalAlignment="Top" Background="#FF364CCD">
+                <TextBlock x:Name="TitleTEXT" Foreground="White" Text="Administrator" FontFamily="IRANSans Medium" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontWeight="Bold"/>
+                <!--About Menu-->
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">                    
+                    <materialdesign:PopupBox  Margin="10" Foreground="White" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                        <StackPanel Width="150">
+                            <Button Content="Profile"/>
+                            <Button Content="Settings"/>
+                            <Button Content="Help"/>
+                            <Separator/>
+                            <Button x:Name="logoutButton" Content="Log Out" Click="logoutButton_Click"/>
+                        </StackPanel>
+                    </materialdesign:PopupBox>
+                </StackPanel>
+            </Grid>
             <!--Left Menu-->
-            <Grid x:Name="GridMenu" Grid.Column="0" Grid.Row="0" Width="60" HorizontalAlignment="Left" Background="#FF5365A6" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Grid x:Name="GridMenu" Grid.Column="0" Grid.Row="0" Width="60" HorizontalAlignment="Left" Background="#FF5365A6" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="0,0,0,-0.4">
                 <StackPanel>
                     <!--Top Menu Control Button-->
                     <Grid Height="150" Background="White">
@@ -58,47 +77,47 @@
                     </Grid>
 
                     <!--left Button list Menu-->
-                    <ListView  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FF999BB5" Background="{x:Null}" BorderBrush="{x:Null}">
-                        <!--DateTravels Button-->
-                        <ListViewItem x:Name="DateTravelsMenuButton" Height="60">
+                    <ListView  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Foreground="#FFD7D2D2" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <!--ALLPharmacy /Search Button-->
+                        <ListViewItem x:Name="AllPharmacyMenuButton" Height="60">
                             <StackPanel Orientation="Horizontal">
-                                <materialdesign:PackIcon Kind="Buffer" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
-                                <TextBlock Text=""  FontSize="15" VerticalAlignment="Center" Margin="20 10" FontFamily="IRANSans"/>
+                                <materialdesign:PackIcon Kind="Pharmacy" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="All Pharmacis"  FontSize="15" VerticalAlignment="Center" Margin="20 10" FontFamily="IRANSans"/>
                             </StackPanel>
                         </ListViewItem>
-                        <!--DayTravels Button-->
-                        <ListViewItem x:Name="DayTravelsMenuButton" Height="60">
+                        <!--New Pharmacy Button-->
+                        <ListViewItem x:Name="NewPharmacyMenuButton" Height="60">
                             <StackPanel Orientation="Horizontal">
-                                <materialdesign:PackIcon Kind="Table" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
-                                <TextBlock Text="" FontFamily="IRANSans" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
+                                <materialdesign:PackIcon Kind="AccountPlus" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="New Pharmacy" FontFamily="IRANSans" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <!--Places Button-->
-                        <ListViewItem x:Name="PlacesMenuButton" Height="60">
-                            <StackPanel Orientation="Horizontal">
-                                <materialdesign:PackIcon Kind="AccountLocation" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
-                                <TextBlock Text="" FontFamily="IRANSans" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
-                            </StackPanel>
-                        </ListViewItem>
-                        <!--Users Button-->
-                        <ListViewItem x:Name="UsersMenuButton" Height="60">
+                        <!--Edit Pharmacy Button-->
+                        <ListViewItem x:Name="EditPharmacyButton" Height="60">
                             <StackPanel Orientation="Horizontal">
                                 <materialdesign:PackIcon Kind="AccountSettings" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
-                                <TextBlock Text="" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
+                                <TextBlock Text="Edit Pharmacy" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <!--Profile Button-->
-                        <ListViewItem x:Name="ProfileMenuButton" Height="60">
+                        <!--All Users/Search User Button-->
+                        <ListViewItem x:Name="AllUserMenuButton" Height="60">
                             <StackPanel Orientation="Horizontal">
-                                <materialdesign:PackIcon Kind="Account" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
-                                <TextBlock Text="" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
+                                <materialdesign:PackIcon Kind="AccountMultiple" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="All Users" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
-                        <!--Settings Button-->
-                        <ListViewItem x:Name="SettingsMenuButton" Height="60">
+                        <!--Add User Button-->
+                        <ListViewItem x:Name="AddUserMenuButton" Height="60">
                             <StackPanel Orientation="Horizontal">
-                                <materialdesign:PackIcon Kind="Settings" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
-                                <TextBlock Text="" FontFamily="IRANSans" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
+                                <materialdesign:PackIcon Kind="AccountMultiplePlus" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Add User" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--Edit Users Button-->
+                        <ListViewItem x:Name="EditUserButton" Height="60">
+                            <StackPanel Orientation="Horizontal">
+                                <materialdesign:PackIcon Kind="AccountEdit" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Edit User" FontFamily="IRANSans" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
                     </ListView>
@@ -108,7 +127,7 @@
 
 
         </Grid>
-        <Grid x:Name="LoginGrid" Visibility="Visible" Grid.Row="0">
+        <Grid x:Name="LoginGrid" Visibility="Hidden" Grid.Row="0">
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="Sign In Page" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 90"/>
                 <StackPanel Orientation="Horizontal" Margin="20">
