@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using noskhe_Admin.Views.Pharmacy.NewPharmacys;
 namespace noskhe_Admin
 {
     /// <summary>
@@ -65,6 +65,12 @@ namespace noskhe_Admin
             ShowGridView.Children.Clear();
             TitleTEXT.Text = Title;
             ShowGridView.Children.Add(userControl);
+        }
+
+        private void NewPharmacyMenuButton_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UserControl newPharmacy = new NewPharmacy();
+            ShowGridFunc(ref newPharmacy, "Add New Pharmacy");
         }
     }
 }

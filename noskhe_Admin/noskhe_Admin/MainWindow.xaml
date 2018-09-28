@@ -91,7 +91,7 @@
                             </StackPanel>
                         </ListViewItem>
                         <!--New Pharmacy Button-->
-                        <ListViewItem x:Name="NewPharmacyMenuButton" Height="60">
+                        <ListViewItem x:Name="NewPharmacyMenuButton" Height="60" MouseLeftButtonUp="NewPharmacyMenuButton_MouseLeftButtonUp">
                             <StackPanel Orientation="Horizontal">
                                 <materialdesign:PackIcon Kind="AccountPlus" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
                                 <TextBlock Text="New Pharmacy" FontFamily="IRANSans" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>

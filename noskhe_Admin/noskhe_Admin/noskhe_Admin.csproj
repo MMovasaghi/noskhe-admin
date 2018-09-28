@@ -68,6 +68,9 @@
     </Compile>
     <Compile Include="Views\Pharmacy\AllPharmacys\Models\AllPharmacyModel.cs" />
     <Compile Include="Views\Pharmacy\AllPharmacys\ViewModels\AllPharmacyVM.cs" />
+    <Compile Include="Views\Pharmacy\NewPharmacy\NewPharmacy.xaml.cs">
+      <DependentUpon>NewPharmacy.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -83,6 +86,10 @@
     <Page Include="Views\Pharmacy\AllPharmacys\AllPharmacy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pharmacy\NewPharmacy\NewPharmacy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -124,7 +131,6 @@
     <Folder Include="Views\Customer\NewCustomer\" />
     <Folder Include="Views\Delivery\" />
     <Folder Include="Views\Pharmacy\EditPharmacy\" />
-    <Folder Include="Views\Pharmacy\NewPharmacy\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
