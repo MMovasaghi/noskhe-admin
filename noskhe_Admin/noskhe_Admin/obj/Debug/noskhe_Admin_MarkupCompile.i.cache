@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\Noskhe\noskhe-admin\noskhe_Admin\noskhe_Admin\App.xaml
-3-481920936
+6264190512
 
-13707835632
-15-1928253501
-MainWindow.xaml;Views\Pharmacy\AllPharmacys\AllPharmacy.xaml;Views\Pharmacy\NewPharmacy\NewPharmacy.xaml;
+181287379875
+140571228016
+MainWindow.xaml;Views\Pharmacy\ShowAllMedicion.xaml;Views\Pharmacy\AllPharmacys\AllPharmacy.xaml;Views\Pharmacy\AddNewMedicon.xaml;Views\Pharmacy\NewPharmacy\NewPharmacy.xaml;Views\Pharmacy\ShowDrug.xaml;
 
-True
+False
 
