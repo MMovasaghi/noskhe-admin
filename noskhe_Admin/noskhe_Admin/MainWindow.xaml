@@ -98,14 +98,14 @@
                             </StackPanel>
                         </ListViewItem>
                         <!--Edit Pharmacy Button-->
-                        <ListViewItem x:Name="EditPharmacyButton" Height="60">
+                        <ListViewItem x:Name="AddMedicionButton" Height="60" MouseLeftButtonUp="AddMedicionButton_MouseLeftButtonUp">
                             <StackPanel Orientation="Horizontal">
-                                <materialdesign:PackIcon Kind="AccountSettings" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
-                                <TextBlock Text="Edit Pharmacy" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
+                                <materialdesign:PackIcon Kind="OpenInNew" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
+                                <TextBlock Text="Add Medicion" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>
                             </StackPanel>
                         </ListViewItem>
                         <!--All Users/Search User Button-->
-                        <ListViewItem x:Name="AllUserMenuButton" Height="60">
+                        <ListViewItem x:Name="AllMedicion" Height="60" MouseLeftButtonUp="AllMedicion_MouseLeftButtonUp">
                             <StackPanel Orientation="Horizontal">
                                 <materialdesign:PackIcon Kind="AccountMultiple" Width="25" Margin="10" Height="25" VerticalAlignment="Center"/>
                                 <TextBlock Text="All Users" FontSize="15" VerticalAlignment="Center" Margin="20 10"/>

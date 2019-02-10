@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using noskhe_Admin.Views.Pharmacy.NewPharmacys;
+using noskhe_Admin.Views.Pharmacy;
+
 namespace noskhe_Admin
 {
     /// <summary>
@@ -71,6 +73,18 @@ namespace noskhe_Admin
         {
             UserControl newPharmacy = new NewPharmacy();
             ShowGridFunc(ref newPharmacy, "Add New Pharmacy");
+        }
+
+        private void AddMedicionButton_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UserControl addnewMedicion = new AddNewMedicon();
+            ShowGridFunc(ref addnewMedicion, "Add New Medicion");
+        }
+
+        private void AllMedicion_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            UserControl allmedicion = new ShowAllMedicion();
+            ShowGridFunc(ref allmedicion, "All Medicions");
         }
     }
 }
